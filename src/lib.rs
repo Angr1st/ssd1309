@@ -34,7 +34,7 @@
 //!
 //! Uses [mode::GraphicsMode] and [embedded_graphics](../embedded_graphics/index.html).
 //!
-//! ```rust,no-run
+//! ```rust,no_run
 //! #![no_std]
 //!
 //! extern crate cortex_m;
@@ -70,7 +70,7 @@
 //!         &mut afio.mapr,
 //!         Mode::Fast {
 //!             frequency: 400.kHz(),
-//!             duty_cycle: DutyCycle::Ratio1to1,
+//!             duty_cycle: DutyCycle::Ratio2to1,
 //!         },
 //!         clocks,
 //!     );
@@ -111,5 +111,7 @@ mod displaysize;
 pub mod mode;
 pub mod prelude;
 pub mod properties;
+#[doc(hidden)]
+pub mod test_helpers;
 
 pub use crate::builder::{Builder, NoOutputPin};
