@@ -107,6 +107,7 @@ where
     /// Get display dimensions, taking into account the current rotation of the display
     ///
     /// ```rust
+    /// # use ssd1309::prelude::*;
     /// # struct FakeInterface;
     /// #
     /// # impl DisplayInterface for FakeInterface {

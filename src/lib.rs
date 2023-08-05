@@ -42,7 +42,7 @@
 //! extern crate embedded_hal as hal;
 //! extern crate panic_abort;
 //! extern crate ssd1309;
-//! extern crate stm32f103xx_hal as blue_pill;
+//! extern crate stm32f1xx_hal as blue_pill;
 //!
 //! use blue_pill::delay::Delay;
 //! use blue_pill::i2c::{DutyCycle, I2c, Mode};
@@ -69,11 +69,10 @@
 //!         (scl, sda),
 //!         &mut afio.mapr,
 //!         Mode::Fast {
-//!             frequency: 400_000,
+//!             frequency: 400.kHz(),
 //!             duty_cycle: DutyCycle::Ratio1to1,
 //!         },
 //!         clocks,
-//!         &mut rcc.apb1,
 //!     );
 //!
 //!     let i2c_interface = I2CInterface::new(i2c, 0x3C, 0x40);
