@@ -109,7 +109,7 @@ where
     /// ```rust
     /// # use ssd1309::test_helpers::StubInterface;
     ///# let interface = StubInterface;
-    /// use ssd1309::{mode::RawMode, prelude::*};
+    /// use ssd1309::prelude::*;
     ///
     /// let mut display: GraphicsMode<_> = ssd1309::Builder::new().connect(interface).into();
     /// assert_eq!(display.get_dimensions(), (128, 64));
