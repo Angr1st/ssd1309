@@ -44,8 +44,8 @@
 //! extern crate ssd1309;
 //! extern crate stm32f1xx_hal as blue_pill;
 //!
-//! use blue_pill::delay::Delay;
-//! use blue_pill::i2c::{DutyCycle, I2c, Mode};
+//! use blue_pill::pac::Peripherals;
+//! use blue_pill::i2c::{DutyCycle, BlockingI2c, Mode};
 //! use blue_pill::prelude::*;
 //! use display_interface_i2c::I2CInterface;
 //! use embedded_graphics::fonts::Font6x8;
