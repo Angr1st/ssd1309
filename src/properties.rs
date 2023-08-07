@@ -107,7 +107,9 @@ where
     /// Get display dimensions, taking into account the current rotation of the display
     ///
     /// ```rust
-    /// # use ssd1309::test_helpers::StubInterface;
+    ///# #[path = "test_helpers.rs"]
+    ///# mod test_helpers;
+    ///# use test_helpers::StubInterface;
     ///# let interface = StubInterface;
     /// use ssd1309::prelude::*;
     ///
